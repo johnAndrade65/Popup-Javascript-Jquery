@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background: #dedede;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.click{
+    background: #2981bc;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 15px;
+    border: 1px solid #0059b3;
+}
+.popup_box{
+    user-select: none;
+    display: flex;
+    width: 600px;
+    height: 350px;
+    align-items: center;
+    flex-direction: column;
+    background-color: beige;
+    text-align: center;
+    border: 1px solid #b3b3b3;
+    box-shadow: #5a5a5a 0px 5px 10px;
+    z-index: 9999;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease-in-out;
+}
+.popup_box h2{
+    width: 80px;
+    height: 80px;
+    font-size: 60px;
+    font-weight: 900;
+    color: #eb9447;
+    border: 3px solid #eb9447;
+    border-radius: 50%;
+    margin: 20px;
+    padding-bottom: 5px;
+}
+.popup_box h1{
+    font-size: 30px;
+    color: #1b2631;
+    margin-bottom: 5px;
+}
+.popup_box label{
+    font-size: 23px;
+    color: #404040;
+    margin-bottom: 5px;
+}
+.popup_box .btns{
+    margin: 4px 0 0 0;
+}
+.btns .btn1, .btns .btn2{
+    background: #999999;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 13px;
+    border: 1px solid #808080;
+    border-radius: 5px;
+}
+.btns .btn2{
+    background: #ff3333;
+    border: 1px solid #cc0000;
+    margin-left: 20px;
+}
+.btn1:hover{
+    transition: 0.1s;
+    background: #8c8c8c;
+}
+.btn2:hover{
+    transition: 0.1s;
+    background: #e20000;
+}
